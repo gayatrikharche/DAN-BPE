@@ -39,6 +39,9 @@ To train the Byte Pair Encoding (BPE) model with subword tokenization, run the f
 python main3.py --model DAN
 ```
 
+Here, dan_dev_accuracy.png and dan_train_accuracy.png are outputs of part 1a. While dan_dev_accuracy-random.png and dan_train_accuracy-random.png are outputs of part 1b.
+
+
 ## Note
 
 Make sure you are running these commands in the terminal from the directory where your assignment files are located. Each script corresponds to different parts of the assignment and should be run in the order outlined above to ensure a smooth progression through the tasks.
