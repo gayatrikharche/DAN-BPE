@@ -11,7 +11,7 @@ import argparse
 import matplotlib.pyplot as plt
 from torch.utils.data import DataLoader
 from BOWmodels import SentimentDatasetBOW, NN2BOW, NN3BOW
-from DANmodelsbpe import SentimentDatasetDAN, DAN, BPE
+from DANmodels3 import SentimentDatasetDAN, DAN, BPE
 from sentiment_data import WordEmbeddings, read_word_embeddings
 from utils import Indexer
 
