@@ -1,20 +1,44 @@
-# DAN-BPE
 
-## Overview
+# How to Run the Code for DAN-BPE
 
-The main goal of this assignment is to gain experience in training neural networks for text tasks, focusing on the standard NLP pipeline: reading in data, preprocessing, training, and testing. You will also explore sub-word tokenization and work on conceptual exercises to better understand the skip-gram word embedding algorithm.
+This document provides instructions on how to run the code for the DAN-BPE assignment. Follow the steps below to ensure everything is set up correctly.
 
-## Preliminaries
+## Step 1: Confirm Setup
 
-### Software Requirements
-
-This assignment will be implemented in Python 3.6 or later. We will be using PyTorch, a Python-based machine learning framework.
-
-**Setting Up PyTorch:** To install PyTorch, follow the instructions at [PyTorch Installation Guide](https://pytorch.org/get-started/locally/). This assignment can be completed using CPU only, so GPU support is not required.
-
-### Creating a Virtual Environment
-
-It is recommended (but not required) to work within a virtual environment for better dependency management. To create a new virtual environment with Python 3, run:
+To ensure that your setup is working correctly, run the Bag of Words (BOW) model. Open your terminal and execute the following command:
 
 ```bash
-conda create -n my-virtenv python=3
+python main.py --model BOW
+```
+
+If there are no errors, your environment is set up correctly.
+
+## Step 2: Implement the Deep Averaging Network (DAN)
+
+### Part 1a: DAN Implementation
+
+To run your implementation of the Deep Averaging Network (DAN), execute the following command in your terminal:
+
+```bash
+python main1.py --model DAN
+```
+
+### Part 1b: Randomly Initialized Embeddings
+
+To modify your model to use randomly initialized embeddings, run:
+
+```bash
+python main2.py --model DAN
+```
+
+## Step 3: Implement Byte Pair Encoding (BPE)
+
+To train the Byte Pair Encoding (BPE) model with subword tokenization, run the following command:
+
+```bash
+python main3.py --model DAN
+```
+
+## Note
+
+Make sure you are running these commands in the terminal from the directory where your assignment files are located. Each script corresponds to different parts of the assignment and should be run in the order outlined above to ensure a smooth progression through the tasks.
