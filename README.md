@@ -22,6 +22,7 @@ To run your implementation of the Deep Averaging Network (DAN), execute the foll
 ```bash
 python main1.py --model DAN
 ```
+You can change hyperparameters in main1.py file.
 
 ### Part 1b: Randomly Initialized Embeddings
 
@@ -38,7 +39,7 @@ To train the Byte Pair Encoding (BPE) model with subword tokenization, run the f
 ```bash
 python main3.py --model DAN
 ```
-
+You can change vocabulary size in main3.py file.
 Here, dan_dev_accuracy.png and dan_train_accuracy.png are outputs of part 1a. While dan_dev_accuracy-random.png and dan_train_accuracy-random.png are outputs of part 1b.
 
 
