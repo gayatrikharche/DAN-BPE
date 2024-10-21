@@ -34,7 +34,7 @@ class SentimentDatasetDAN(Dataset):
         return word_indices, label
         
 class DAN(nn.Module):
-    def __init__(self, word_embeddings, hidden_size, num_layers=1, dropout=0.0):
+    def __init__(self, word_embeddings, hidden_size, num_layers=1, dropout=0.1):
         super(DAN, self).__init__()
 
         # Ensure embedding layer is initialized with the correct vocab size
